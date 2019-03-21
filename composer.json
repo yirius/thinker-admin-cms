@@ -1,0 +1,26 @@
+{
+    "name": "yirius/thinker-admin-cms",
+    "description": "thiner-admin's cms package",
+    "version": "1.0.0",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "yirius",
+            "email": "2951979767@qq.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Yirius\\AdminCms\\": "src/"
+        },
+        "files": [
+            "src/helper.php"
+        ]
+    },
+    "minimum-stability": "dev",
+    "require": {
+        "yirius/thinker-admin": "*",
+        "ext-json": "*"
+    }
+}
