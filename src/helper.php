@@ -6,6 +6,8 @@
  * Time: 下午11:05
  */
 
+define("THINKER_CMS_ROOT", __DIR__);
+
 //Cms's Controller
 \think\facade\Route::alias("thinkercms", "\\Yirius\\AdminCms\\controller\\Cms", ['deny_ext' => 'php|.htacess']);
 
@@ -22,3 +24,9 @@
 \think\facade\Route::resource("restful/cmsguestbookattr", "\\Yirius\\AdminCms\\restful\\CmsGuestbookAttr");
 \think\facade\Route::resource("restful/cmsproduct", "\\Yirius\\AdminCms\\restful\\CmsProduct");
 \think\facade\Route::resource("restful/cmsproductattr", "\\Yirius\\AdminCms\\restful\\CmsProductAttr");
+//模板表
+\think\facade\Route::resource("restful/cmstemplates", "\\Yirius\\AdminCms\\restful\\CmsTemplates");
+\think\facade\Route::resource("restful/cmstemplatesvars", "\\Yirius\\AdminCms\\restful\\CmsTemplatesVars");
+
+//便捷访问
+\think\facade\Route::get("cms_:id", "Index/cms");

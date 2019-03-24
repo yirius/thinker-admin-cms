@@ -468,7 +468,7 @@ HTML
             //judge if it one to one
             if($id == -1){
                 //direct for form page
-                $value = \Yirius\Admin\model\table\Cms::get(['columnid' => $this->cmsColumn['id']]);
+                $value = \Yirius\AdminCms\model\Cms::get(['columnid' => $this->cmsColumn['id']]);
                 if(empty($value)){
                     $value = [];
                     $id = 0;
@@ -476,7 +476,7 @@ HTML
                     $id = $value['id'];
                 }
             }else{
-                $value = $id == 0 ? [] : \Yirius\Admin\model\table\Cms::get(['id' => $id]);
+                $value = $id == 0 ? [] : \Yirius\AdminCms\model\Cms::get(['id' => $id]);
             }
 
             $form->setValue($value);

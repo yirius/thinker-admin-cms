@@ -24,7 +24,7 @@ class CmsColumns extends AdminRestful
 
     protected $tableSaveMsg = "新增Cms栏目成功";
 
-    protected $tableCanEditField = ['status'];
+    protected $tableCanEditField = ['status','is_hidden'];
 
     /**
      * @title index

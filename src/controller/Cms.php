@@ -9,6 +9,7 @@
 namespace Yirius\AdminCms\controller;
 
 
+use Yirius\Admin\Admin;
 use Yirius\Admin\controller\AdminController;
 use Yirius\Admin\form\Form;
 use Yirius\Admin\form\Tab;
@@ -16,6 +17,8 @@ use Yirius\AdminCms\model\CmsColumns;
 use Yirius\AdminCms\model\CmsModels;
 use Yirius\AdminCms\model\CmsModelsField;
 use Yirius\Admin\table\Table;
+use Yirius\AdminCms\model\CmsTemplates;
+use Yirius\AdminCms\model\CmsTemplatesVars;
 
 class Cms extends AdminController
 {
@@ -27,7 +30,7 @@ class Cms extends AdminController
      */
     public function models()
     {
-        return \Yirius\Admin\Admin::table("thinker_cms_models", function(Table $table){
+        return Admin::table("thinker_cms_models", function (Table $table) {
 
             $table->setRestfulUrl("/restful/cmsmodels")->setEditPath("/thinkercms/modelsEdit");
 
@@ -72,7 +75,7 @@ class Cms extends AdminController
      */
     public function modelsEdit($id = 0)
     {
-        return \Yirius\Admin\Admin::form("thinker_cms_modelsedit", function(Form $form) use($id){
+        return Admin::form("thinker_cms_modelsedit", function (Form $form) use ($id) {
             $form->setValue($id == 0 ? [] : CmsModels::get(['id' => $id])->toArray());
 
             $form->text("nid", "模型标识");
@@ -100,7 +103,7 @@ class Cms extends AdminController
      */
     public function modelsField($modelid)
     {
-        return \Yirius\Admin\Admin::table("thinker_cms_modelsfield", function(Table $table) use($modelid){
+        return Admin::table("thinker_cms_modelsfield", function (Table $table) use ($modelid) {
 
             $table
                 ->setRestfulUrl("/restful/cmsmodelsfield?modelid=" . $modelid)
@@ -144,7 +147,7 @@ class Cms extends AdminController
      */
     public function modelsFieldEdit($modelid, $id = 0)
     {
-        return \Yirius\Admin\Admin::form("thinker_cms_modelsfieldedit", function(Form $form) use($modelid, $id){
+        return Admin::form("thinker_cms_modelsfieldedit", function (Form $form) use ($modelid, $id) {
             $form->setValue($id == 0 ? [] : CmsModelsField::get(['id' => $id])->toArray());
 
             $form->text("title", "字段标题");
@@ -225,7 +228,7 @@ HTML
      */
     public function columns()
     {
-        return \Yirius\Admin\Admin::table("thinker_cms_columns", function(Table $table){
+        return Admin::table("thinker_cms_columns", function (Table $table) {
 
             $table->setRestfulUrl("/restful/cmscolumns")->setEditPath("/thinkercms/columnsEdit");
 
@@ -286,11 +289,11 @@ HTML
      */
     public function columnsEdit($pid = 0, $id = 0, $level = 0)
     {
-        return \Yirius\Admin\Admin::form("thinker_cms_columnsdit", function(Form $form) use($pid, $id, $level){
+        return \Yirius\Admin\Admin::form("thinker_cms_columnsdit", function (Form $form) use ($pid, $id, $level) {
             $value = $id == 0 ? [] : CmsColumns::get(['id' => $id])->toArray();
             $form->setValue($value);
 
-            $form->tab("基础设置", function(Tab $tab){
+            $form->tab("基础设置", function (Tab $tab) {
 
                 $tab->text("name", "*栏目名称");
 
@@ -305,7 +308,7 @@ HTML
                 $tab->switchs("is_hidden", "是否隐藏");
             });
 
-            $form->tab("高级设置", function(Tab $tab){
+            $form->tab("高级设置", function (Tab $tab) {
 
                 $tab->switchs("is_link", "是否链接")->on('$("#thinkeradmin_link").parent().parent()[obj.elem.checked ? "show" : "hide"]();');
 
@@ -325,7 +328,7 @@ HTML
             $form->footer()->submit("/restful/cmscolumns", $id);
 
             //隐藏设置
-            \Yirius\Admin\Admin::script('$("#thinkeradmin_link").parent().parent().hide();');
+            Admin::script('$("#thinkeradmin_link").parent().parent().hide();');
         })->show();
     }
 
@@ -339,7 +342,7 @@ HTML
      */
     public function cms($id)
     {
-        return \Yirius\Admin\Admin::widgets("cms", function(\Yirius\AdminCms\widgets\Cms $cms) use($id){
+        return Admin::widgets("cms", function (\Yirius\AdminCms\widgets\Cms $cms) use ($id) {
 
             $cms->setCmsColumn($id);
 
@@ -357,7 +360,7 @@ HTML
      */
     public function cmsEdit($columnid, $id = 0)
     {
-        return \Yirius\Admin\Admin::widgets("cms", function(\Yirius\AdminCms\widgets\Cms $cms) use($columnid, $id){
+        return Admin::widgets("cms", function (\Yirius\AdminCms\widgets\Cms $cms) use ($columnid, $id) {
 
             $cms->setCmsColumn($columnid);
 
@@ -378,7 +381,7 @@ HTML
      */
     public function cmsAttr($id)
     {
-        return \Yirius\Admin\Admin::widgets("cms", function(\Yirius\AdminCms\widgets\Cms $cms) use($id){
+        return Admin::widgets("cms", function (\Yirius\AdminCms\widgets\Cms $cms) use ($id) {
 
             $cms->setCmsColumn($id);
 
@@ -397,12 +400,131 @@ HTML
      */
     public function cmsAttrEdit($columnid)
     {
-        return \Yirius\Admin\Admin::widgets("cms", function(\Yirius\AdminCms\widgets\Cms $cms) use($columnid){
+        return Admin::widgets("cms", function (\Yirius\AdminCms\widgets\Cms $cms) use ($columnid) {
 
             $cms->setCmsColumn($columnid);
 
             $cms->setType("AttrEdit");
 
         })->render();
+    }
+
+    /**
+     * @title templates
+     * @description
+     * @createtime 2019/3/21 下午11:50
+     * @return mixed
+     */
+    public function templates()
+    {
+        return Admin::table("thinker_cms_templates", function (Table $table) {
+
+            $table->setRestfulUrl("/restful/cmstemplates")->setEditPath("/thinkercms/templatesEdit");
+
+            $table->columns("id", "模板编号");
+
+            $table->columns("title", "模板名称");
+
+            $table->columns("status", "状态")->setSwitchTemplet("status");
+
+            $table->columns("create_time", "创建时间");
+
+            $table->columns("op", "操作")
+                ->button(
+                    "变量",
+                    "/thinkercms/templateVars?id={{d.id}}",
+                    "set",
+                    "layui-btn-warm",
+                    true
+                )
+                ->edit()->delete()->setWidth(210);
+
+            $table->tool()->edit()->delete();
+
+            $table->toolbar()->add()->delete()->event()->add()->delete();
+
+        })->show();
+    }
+
+    /**
+     * @title templatesEdit
+     * @description
+     * @createtime 2019/3/22 上午12:00
+     * @param int $id
+     * @return mixed
+     * @throws \Exception
+     */
+    public function templatesEdit($id = 0)
+    {
+        return Admin::form("thinker_cms_templatesedit", function(Form $form) use($id){
+
+            $form->setValue($id == 0 ? [] : CmsTemplates::get(['id' => $id]));
+
+            $form->text("title", "模板名称");
+
+            $form->switchs("status", "状态");
+
+            $form->text("path", "模板路径");
+
+            $form->footer()->submit("/restful/cmstemplates", $id);
+        })->show();
+    }
+
+    /**
+     * @title templateVars
+     * @description
+     * @createtime 2019/3/22 下午3:11
+     * @param $id
+     * @return mixed
+     */
+    public function templateVars($id)
+    {
+        return Admin::table("thinker_cms_templatevars", function(Table $table) use($id){
+            $table
+                ->setRestfulUrl("/restful/cmstemplatesvars?templateid=" . $id)
+                ->setEditPath("/thinkercms/templateVarsEdit?templateid=" . $id);
+
+            $table->columns("id", "编号");
+
+            $table->columns("title", "变量名称");
+
+            $table->columns("name", "变量字段");
+
+            $table->columns("value", "变量值");
+
+            $table->columns("create_time", "创建时间");
+
+            $table->columns("op", "操作")->edit()->delete();
+
+            $table->tool()->edit()->delete();
+
+            $table->toolbar()->add()->delete()->event()->add()->delete();
+
+        })->show();
+    }
+
+    /**
+     * @title templateVarsEdit
+     * @description
+     * @createtime 2019/3/22 下午3:19
+     * @param $templateid
+     * @return mixed
+     * @throws \Exception
+     */
+    public function templateVarsEdit($templateid, $id = 0)
+    {
+        return Admin::form("thinker_cms_templatevarsedit", function(Form $form) use($templateid, $id){
+
+            $form->setValue($id == 0 ? [] : CmsTemplatesVars::get(['id' => $id]));
+
+            $form->text("title", "变量名称");
+
+            $form->text("name", "变量字段");
+
+            $form->textarea("value", "变量值");
+
+            $form->footer()->submit("/restful/cmstemplatesvars?templateid=" . $templateid, $id);
+
+        })->show();
     }
 }
