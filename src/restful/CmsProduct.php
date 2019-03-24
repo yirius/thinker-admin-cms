@@ -69,7 +69,7 @@ class CmsProduct extends AdminRestful
             'modelid.require' => "对应模型必须填写",
         ]];
 
-        $fields = \Yirius\Admin\model\table\CmsProductAttr::where([
+        $fields = \Yirius\AdminCms\model\CmsProductAttr::where([
             ['columnid', '=', $addData['columnid']]
         ])->select();
 
