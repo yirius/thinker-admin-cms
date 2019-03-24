@@ -65,11 +65,17 @@ class CmsController
         $topMenus = CmsColumns::where([
             ['is_hidden', '=', 0],
             ['status', '=', 1]
-        ])->order("list_order", "desc")->select()->toArray();
+        ])->field("id,name,pid")->order("list_order", "desc")->select()->toArray();
+
+        //find latest five news
+        $latestFiveCms = \Yirius\AdminCms\model\Cms::order("list_order", "desc")
+            ->limit(5)->select()->toArray();
+
 
         //render home page
         return $this->assign([
-            'topMenus' => Admin::tools()->tree($topMenus, null)
+            'topMenus' => Admin::tools()->tree($topMenus, null),
+            'latestcms' => $latestFiveCms
         ])->fetch("index");
     }
 

@@ -71,7 +71,7 @@ class Cms extends AdminRestful
         ]];
 
         //判断其他参数是否是必填
-        $fields = \Yirius\Admin\model\table\CmsModelsField::findFieldByCache(
+        $fields = \Yirius\AdminCms\model\CmsModelsField::findFieldByCache(
             $request->param("modelid"), true
         );
         foreach($fields as $i => $v){
