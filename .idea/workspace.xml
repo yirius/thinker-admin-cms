@@ -2,15 +2,91 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6ccd65dd-98fb-44d2-9e4c-1fd14afadd2b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/templates/default/article.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/templates/default/base.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/templates/default/guestbook.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/templates/default/single.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/templates/default/css/animate.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/templates/default/css/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/templates/default/css/flaticon.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/templates/default/css/font-awesome.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/templates/default/css/grabbing.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/templates/default/css/jquery-ui.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/templates/default/css/meanmenu.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/templates/default/css/owl.carousel.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/templates/default/css/responsive.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/templates/default/css/video-js.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/templates/default/images/about/1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/templates/default/images/about/2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/templates/default/images/banner/loader.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/templates/default/images/blog/1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/templates/default/images/blog/2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/templates/default/images/blog/3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/templates/default/images/features/1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/templates/default/images/features/2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/templates/default/images/features/3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/templates/default/images/features/4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/templates/default/images/icons/1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/templates/default/images/icons/10.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/templates/default/images/icons/11.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/templates/default/images/icons/12.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/templates/default/images/icons/2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/templates/default/images/icons/3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/templates/default/images/icons/4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/templates/default/images/icons/5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/templates/default/images/icons/6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/templates/default/images/icons/7.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/templates/default/images/icons/8.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/templates/default/images/icons/9.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/templates/default/images/icons/l.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/templates/default/images/icons/menubar.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/templates/default/images/icons/vid.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/templates/default/images/logo/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/templates/default/images/logo/logo.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/templates/default/images/media/1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/templates/default/images/media/2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/templates/default/images/media/3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/templates/default/images/media/4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/templates/default/images/media/5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/templates/default/images/media/6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/templates/default/images/media/7.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/templates/default/images/media/8.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/templates/default/images/team/1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/templates/default/images/team/2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/templates/default/images/team/3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/templates/default/images/team/4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/templates/default/images/team/5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/templates/default/images/team/6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/templates/default/images/team/7.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/templates/default/images/team/8.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/templates/default/images/video/1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/templates/default/images/video/2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/templates/default/images/video/3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/templates/default/images/video/4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/templates/default/images/video/5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/templates/default/images/video/6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/templates/default/images/video/7.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/templates/default/images/video/8.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/templates/default/images/video/9.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/templates/default/js/Youtube.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/templates/default/js/bootstrap-hover-dropdown.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/templates/default/js/bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/templates/default/js/echarts.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/templates/default/js/jquery-ui.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/templates/default/js/jquery.easypiechart.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/templates/default/js/jquery.meanmenu.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/templates/default/js/main.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/templates/default/js/owl.carousel.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/templates/default/js/plugins.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/templates/default/js/smooth-scroll.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/templates/default/js/tether.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/templates/default/js/vc_round_chart.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/templates/default/js/vendor/jquery-3.2.1.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/templates/default/js/vendor/modernizr-2.8.3.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/templates/default/js/wow.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/templates/default/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sql/php.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sql/thinkeradmin.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/command/Init.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controller/Cms.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/Cms.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controller/CmsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/CmsController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/helper.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/helper.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/templates/default/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/default/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/templates/default/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/default/base.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -36,35 +112,41 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="gitignore" value="1" />
-          <entry key="html" value="15" />
-          <entry key="json" value="3" />
-          <entry key="php" value="124" />
+          <entry key="html" value="18" />
+          <entry key="js" value="2" />
+          <entry key="json" value="4" />
+          <entry key="php" value="130" />
+          <entry key="sql" value="6" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="Git file" value="1" />
-          <entry key="HTML" value="15" />
-          <entry key="PHP" value="124" />
-          <entry key="composer.json" value="3" />
+          <entry key="HTML" value="18" />
+          <entry key="JavaScript" value="2" />
+          <entry key="PHP" value="130" />
+          <entry key="SQL" value="6" />
+          <entry key="composer.json" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="20" />
           <entry key="gitignore" value="3" />
-          <entry key="html" value="3866" />
+          <entry key="html" value="3870" />
           <entry key="json" value="19" />
-          <entry key="php" value="4165" />
+          <entry key="php" value="4198" />
+          <entry key="sql" value="6" />
           <entry key="txt" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="Git file" value="3" />
-          <entry key="HTML" value="3866" />
-          <entry key="PHP" value="4165" />
+          <entry key="HTML" value="3870" />
+          <entry key="PHP" value="4198" />
           <entry key="PLAIN_TEXT" value="24" />
+          <entry key="SQL" value="6" />
           <entry key="composer.json" value="19" />
         </counts>
       </usages-collector>
@@ -77,62 +159,29 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/controller/CmsController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="749">
-              <caret line="175" column="21" selection-start-line="175" selection-start-column="21" selection-end-line="175" selection-end-column="21" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/templates/default/guestbook.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="802">
-              <caret line="77" column="10" lean-forward="true" selection-start-line="77" selection-start-column="10" selection-end-line="77" selection-end-column="10" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/templates/default/article.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="673">
-              <caret line="100" column="10" selection-start-line="100" selection-start-column="10" selection-end-line="100" selection-end-column="10" />
-              <folding>
-                <element signature="n#section#0;n#!!top" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/templates/default/base.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="531">
-              <caret line="177" column="42" selection-start-line="177" selection-start-column="42" selection-end-line="177" selection-end-column="42" />
-              <folding>
-                <element signature="n#style#0;n#section#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/model/CmsColumns.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="364">
-              <caret line="25" column="29" selection-start-line="25" selection-start-column="20" selection-end-line="25" selection-end-column="29" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/helper.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="621">
-              <caret line="31" column="54" lean-forward="true" selection-start-line="31" selection-start-column="54" selection-end-line="31" selection-end-column="54" />
+            <state relative-caret-position="69">
+              <caret line="8" column="24" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="24" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/command/Init.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="272">
+              <caret line="50" column="94" selection-start-line="50" selection-start-column="94" selection-end-line="50" selection-end-column="94" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sql/php.sql">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="392">
+              <caret line="227" column="39" selection-start-line="227" selection-start-column="39" selection-end-line="227" selection-end-column="39" />
             </state>
           </provider>
         </entry>
@@ -153,6 +202,9 @@
       <find>PRE-SALE</find>
       <find>Yirius\Admin\model\table\CmsModelsField</find>
       <find>item</find>
+      <find>'INSERT INTO `ices_cms_templates_vars` VALUES (11</find>
+      <find>11</find>
+      <find>常见问题</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -187,13 +239,16 @@
         <option value="$PROJECT_DIR$/src/restful/Cms.php" />
         <option value="$PROJECT_DIR$/src/restful/CmsProduct.php" />
         <option value="$PROJECT_DIR$/src/controller/Cms.php" />
-        <option value="$PROJECT_DIR$/src/helper.php" />
         <option value="$PROJECT_DIR$/src/templates/default/index.html" />
         <option value="$PROJECT_DIR$/src/templates/default/article.html" />
-        <option value="$PROJECT_DIR$/src/templates/default/base.html" />
         <option value="$PROJECT_DIR$/src/templates/default/single.html" />
         <option value="$PROJECT_DIR$/src/templates/default/guestbook.html" />
         <option value="$PROJECT_DIR$/src/controller/CmsController.php" />
+        <option value="$PROJECT_DIR$/sql/thinkeradmin.sql" />
+        <option value="$PROJECT_DIR$/src/templates/default/base.html" />
+        <option value="$PROJECT_DIR$/src/helper.php" />
+        <option value="$PROJECT_DIR$/sql/php.sql" />
+        <option value="$PROJECT_DIR$/src/command/Init.php" />
       </list>
     </option>
   </component>
@@ -233,25 +288,23 @@
             <path>
               <item name="thinker-admin-cms" type="b2602c69:ProjectViewProjectNode" />
               <item name="thinker-admin-cms" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="thinker-admin-cms" type="b2602c69:ProjectViewProjectNode" />
+              <item name="thinker-admin-cms" type="462c0819:PsiDirectoryNode" />
+              <item name="sql" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="thinker-admin-cms" type="b2602c69:ProjectViewProjectNode" />
+              <item name="thinker-admin-cms" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="thinker-admin-cms" type="b2602c69:ProjectViewProjectNode" />
               <item name="thinker-admin-cms" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="thinker-admin-cms" type="b2602c69:ProjectViewProjectNode" />
-              <item name="thinker-admin-cms" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="model" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="thinker-admin-cms" type="b2602c69:ProjectViewProjectNode" />
-              <item name="thinker-admin-cms" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="restful" type="462c0819:PsiDirectoryNode" />
+              <item name="command" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="thinker-admin-cms" type="b2602c69:ProjectViewProjectNode" />
@@ -265,12 +318,6 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="templates" type="462c0819:PsiDirectoryNode" />
               <item name="default" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="thinker-admin-cms" type="b2602c69:ProjectViewProjectNode" />
-              <item name="thinker-admin-cms" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="widgets" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -288,9 +335,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/assets/templates/default/js" />
+      <recent name="$PROJECT_DIR$/assets" />
+      <recent name="$PROJECT_DIR$/src" />
+      <recent name="$PROJECT_DIR$/sql" />
       <recent name="$PROJECT_DIR$/src/templates/default" />
-      <recent name="$PROJECT_DIR$/src/restful" />
-      <recent name="$PROJECT_DIR$/src/model" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/widgets" />
@@ -325,7 +374,7 @@
       <workItem from="1553233391907" duration="10487000" />
       <workItem from="1553417639756" duration="4931000" />
       <workItem from="1553484956002" duration="7000" />
-      <workItem from="1553579191258" duration="10397000" />
+      <workItem from="1553579191258" duration="12178000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1553182536430</created>
@@ -355,11 +404,18 @@
       <option name="project" value="LOCAL" />
       <updated>1553432143270</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="init">
+      <created>1553601477374</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1553601477374</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="32196000" />
+    <option name="totallyTimeSpent" value="33977000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1680" y="0" width="1920" height="1080" extended-state="6" />
@@ -378,7 +434,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" weight="0.32970297" />
+      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.32970297" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -402,13 +458,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="69">
           <caret line="8" column="31" selection-start-line="8" selection-start-column="31" selection-end-line="8" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/composer.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="483">
-          <caret line="21" column="16" lean-forward="true" selection-start-line="21" selection-start-column="16" selection-end-line="21" selection-end-column="16" />
         </state>
       </provider>
     </entry>
@@ -594,40 +643,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/helper.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="621">
-          <caret line="31" column="54" lean-forward="true" selection-start-line="31" selection-start-column="54" selection-end-line="31" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/templates/default/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-4095">
-          <caret line="399" column="18" selection-start-line="399" selection-start-column="18" selection-end-line="399" selection-end-column="18" />
-          <folding>
-            <element signature="n#style#0;n#img#0;n#a#0;n#div#0;n#div#0;n#div#0;n#div#0;n#header#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="e#5816#5823#1" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/templates/default/article.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="673">
           <caret line="100" column="10" selection-start-line="100" selection-start-column="10" selection-end-line="100" selection-end-column="10" />
           <folding>
             <element signature="n#section#0;n#!!top" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/templates/default/base.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="531">
-          <caret line="177" column="42" selection-start-line="177" selection-start-column="42" selection-end-line="177" selection-end-column="42" />
-          <folding>
-            <element signature="n#style#0;n#section#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -654,8 +675,71 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/controller/CmsController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="749">
-          <caret line="175" column="21" selection-start-line="175" selection-start-column="21" selection-end-line="175" selection-end-column="21" />
+        <state relative-caret-position="576">
+          <caret line="178" column="5" lean-forward="true" selection-start-line="178" selection-start-column="5" selection-end-line="178" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/composer.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="552">
+          <caret line="24" column="5" lean-forward="true" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/templates/default/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="660">
+          <caret line="557" column="36" lean-forward="true" selection-start-line="557" selection-start-column="36" selection-end-line="557" selection-end-column="36" />
+          <folding>
+            <element signature="n#style#0;n#img#0;n#a#0;n#div#0;n#div#0;n#div#0;n#div#0;n#header#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="e#5816#5823#1" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/templates/default/js/vendor/jquery-3.2.1.min.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/templates/default/js/jquery-ui.min.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/templates/default/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="437">
+          <caret line="19" column="31" selection-start-line="19" selection-start-column="31" selection-end-line="19" selection-end-column="31" />
+          <folding>
+            <element signature="n#style#0;n#section#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/helper.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="69">
+          <caret line="8" column="24" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sql/thinkeradmin.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="302" column="30" selection-start-line="302" selection-start-column="30" selection-end-line="302" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sql/php.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="392">
+          <caret line="227" column="39" selection-start-line="227" selection-start-column="39" selection-end-line="227" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/command/Init.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="50" column="94" selection-start-line="50" selection-start-column="94" selection-end-line="50" selection-end-column="94" />
         </state>
       </provider>
     </entry>

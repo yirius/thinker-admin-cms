@@ -35,3 +35,8 @@ define("THINKER_CMS_ROOT", __DIR__);
 \think\facade\Route::get("guestbook_:id", "Index/Guestbook");
 \think\facade\Route::get("single_:id", "Index/Single");
 \think\facade\Route::get("images_:id", "Index/Images");
+
+//加入以下console
+\think\Console::addDefaultCommands([
+    "Yirius\\AdminCms\\command\\Init"
+]);
