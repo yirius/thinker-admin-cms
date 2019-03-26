@@ -29,4 +29,9 @@ define("THINKER_CMS_ROOT", __DIR__);
 \think\facade\Route::resource("restful/cmstemplatesvars", "\\Yirius\\AdminCms\\restful\\CmsTemplatesVars");
 
 //便捷访问
-\think\facade\Route::get("cms_:id", "Index/cms");
+\think\facade\Route::get("article_:id", "Index/Article");
+\think\facade\Route::get("download_:id", "Index/Download");
+\think\facade\Route::get("product_:id", "Index/Product");
+\think\facade\Route::get("guestbook_:id", "Index/Guestbook");
+\think\facade\Route::get("single_:id", "Index/Single");
+\think\facade\Route::get("images_:id", "Index/Images");

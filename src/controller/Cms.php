@@ -456,7 +456,7 @@ HTML
      */
     public function templatesEdit($id = 0)
     {
-        return Admin::form("thinker_cms_templatesedit", function(Form $form) use($id){
+        return Admin::form("thinker_cms_templatesedit", function (Form $form) use ($id) {
 
             $form->setValue($id == 0 ? [] : CmsTemplates::get(['id' => $id]));
 
@@ -479,7 +479,7 @@ HTML
      */
     public function templateVars($id)
     {
-        return Admin::table("thinker_cms_templatevars", function(Table $table) use($id){
+        return Admin::table("thinker_cms_templatevars", function (Table $table) use ($id) {
             $table
                 ->setRestfulUrl("/restful/cmstemplatesvars?templateid=" . $id)
                 ->setEditPath("/thinkercms/templateVarsEdit?templateid=" . $id);
@@ -506,14 +506,15 @@ HTML
     /**
      * @title templateVarsEdit
      * @description
-     * @createtime 2019/3/22 下午3:19
+     * @createtime 2019/3/26 下午2:00
      * @param $templateid
+     * @param int $id
      * @return mixed
      * @throws \Exception
      */
     public function templateVarsEdit($templateid, $id = 0)
     {
-        return Admin::form("thinker_cms_templatevarsedit", function(Form $form) use($templateid, $id){
+        return Admin::form("thinker_cms_templatevarsedit", function (Form $form) use ($templateid, $id) {
 
             $form->setValue($id == 0 ? [] : CmsTemplatesVars::get(['id' => $id]));
 

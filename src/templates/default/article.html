@@ -1,0 +1,138 @@
+{extend name="base" /}
+
+{block name="content"}
+
+<style>
+    .blog-area {
+        background: rgba(31, 88, 177, .7);
+        border-radius: 14px;
+    }
+
+    .blog-area .blog figure {
+        height: 40%;
+    }
+
+    .container, .row, .blog-slider, .owl-wrapper-outer, .owl-wrapper, .owl-item, .blog-area .blog figure img {
+        height: 100%;
+    }
+
+    .animation-visibility {
+        height: 80%;
+        margin: 10% 0;
+    }
+
+    @media screen and (max-height: 667px) {
+        .animation-visibility {
+            height: 100%;
+            margin: 0;
+            overflow-y: scroll !important;
+        }
+    }
+
+    #showArticleDetail {
+        position: fixed;
+        right: 0;
+        height: 100%;
+        width: 100%;
+        top: 0;
+        z-index: 10000;
+        display: none;
+        background: rgba(0, 0, 0, 0.4);
+    }
+
+    #showArticleDetail .content {
+        width: 60%;
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 100%;
+        background: #fff;
+        padding: 20px;
+        overflow-y: scroll;
+    }
+
+    #showArticleDetail .content p {
+        color: #000;
+    }
+
+    @media screen and (max-width: 750px) {
+        #showArticleDetail .content {
+            width: 80%;
+        }
+    }
+</style>
+
+<section class="blog-area" style="width: 90%;left: 5%;padding: 20px 0;height: 90%;">
+    <div class="container">
+        <div class="row">
+            <div class="blog-slider">
+                {foreach name="article_content" item="article_content_val"}
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="height: 100%;">
+                    <div class="blog wow fadeIn animated animation-visibility"
+                         data-wow-duration="1.3s" style="animation-duration: 1.3s;background: #0d469f;"
+                         data-id="{$article_content_val['id']}">
+                        <figure>
+                            <img src="{$article_content_val['coverpic']|default='/templates/default/images/blog/1.jpg'}"
+                                 alt=""/>
+                        </figure>
+                        <div class="content" style="bottom: 0;">
+                            <span>
+                                <i class="fa fa-calendar-o"></i>
+                                {:date("m月d日,Y年", strtotime($article_content_val['create_time']))}
+                            </span>
+                            <h4>
+                                <a href="#">
+                                    {:mb_substr(strip_tags($article_content_val['title']), 0, 30)}...
+                                </a>
+                            </h4>
+                            <p>
+                                {:mb_substr(strip_tags($article_content_val['content']), 0, 100)}...
+                            </p>
+                            <a href="#" class="blog-btn">
+                                阅读全文 <i class="fa  fa-arrow-circle-o-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                {/foreach}
+            </div>
+        </div>
+    </div>
+</section>
+{/block}
+
+{block name="other"}
+<div id="showArticleDetail">
+    <div class="content">
+        <h2></h2>
+        <div class="">
+
+        </div>
+    </div>
+</div>
+{/block}
+
+{block name="scripts"}
+<script>
+    var articlesList = {:json_encode($article_content)};
+    var showArticleDetail = $("#showArticleDetail");
+    $(".animation-visibility").on("click", function () {
+        if ($(this).data("id")) {
+            var id = $(this).data("id");
+            for (var i in articlesList) {
+                if (id == articlesList[i].id) {
+                    showArticleDetail.find("h2").html(articlesList[i].title);
+                    showArticleDetail.find(".content>div").html(articlesList[i].content);
+                    showArticleDetail.fadeIn();
+                    break;
+                }
+            }
+        }
+    });
+    showArticleDetail.on("click", function (e) {
+        if (e.target.id == "showArticleDetail") {
+            showArticleDetail.fadeOut();
+        }
+    });
+</script>
+{/block}
